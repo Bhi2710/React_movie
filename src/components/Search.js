@@ -5,7 +5,7 @@ const Search = () => {
 
     const [list, setList] = useState([]);
     const [query, setQuery] = useState("Iron man");
-    const [isclicked, setIsClicked] = useState(false);
+    const [setIsClicked] = useState(false);
 
     useEffect(_ => {
         (async _ => {
@@ -13,7 +13,7 @@ const Search = () => {
             setList(response.data.Search);
         })()
         
-    }, [isclicked])
+    }, [query])
 
     return (
         <>
