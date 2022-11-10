@@ -12,7 +12,7 @@ const Search = () => {
             const response = await ombd.get(`?s=${query}`);
             setList(response.data.Search);
         })()
-        // eslint-disable-next-line
+        
     }, [isclicked])
 
     return (
